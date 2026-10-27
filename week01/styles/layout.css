@@ -1,0 +1,94 @@
+/*====================================== MAIN PAGE ================================= */
+
+/*
+* {
+	margin: 0;
+	padding: 0;
+}
+
+*/
+
+body {
+	display: grid;
+  	height: 100vh;
+  	grid-template-rows: auto auto 1fr auto;
+	grid-template-columns: 3fr 1fr;
+}
+
+header, nav, footer {
+  grid-column: 1 / 3; /* Spans from column line 1 to line 3 (both columns) */
+}
+/*==================================== HEADER SEC ================================= */
+
+header {
+	background-color: #CC6195;
+
+}
+
+header h1 {
+	text-align: center;
+	color: #2a7bfa;
+	
+}
+
+/*================================= NAVIGATION BAR ================================= */
+
+.navigation {
+    list-style: none;
+    display: flex;         /* This turns on flexbox to put items side-by-side */
+    flex-wrap: wrap;       /* Wraps items if the screen gets too small */
+    /* background-color: #000; */
+	background-color: #6B2D50; /* Matches your header and footer */
+    margin: 0;
+    padding: 0;
+}
+
+.navigation li {
+	flex: 1 1 auto;        /* Allows the items to grow and shrink side-by-side */
+    text-align: center;    /* Centers the text inside each tab */
+}
+
+.navigation a {
+	font-weight: 700;
+	display: block;
+	color: #eee;
+	padding: 0.75rem;
+	text-decoration: none;
+	text-align: center;
+}
+
+/*====================================== LEFT SEC ================================= */
+main {
+	grid-column: 1 / 2;
+	background-color: #BAA762;
+}
+
+main h2 {
+	text-align: center;
+	color: #2a7bfa;
+}
+
+
+/*====================================== RIGHT SEC ================================= */
+.aside-sidebar {
+	grid-column: 2 / 3;
+	background-color: #d8e7fe;
+}
+
+.aside-sidebar h2 {
+	text-align: center;
+	color: #2a7bfa;
+}
+
+/*===================================== FOOTER SEC ================================= */
+
+footer {
+	background-color: #CC6195;
+
+}
+
+footer h2 {
+	text-align: center;
+	color: #2a7bfa;
+}
+
