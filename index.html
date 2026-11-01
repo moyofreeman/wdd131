@@ -10,7 +10,7 @@
     <meta name="author"    content="Freeman Moyo">
     <meta name="description"    content = "WDD 131 – Dynamic Web Fundamentals, my wdd131 course landing page, to demonstrate my prerequisite knowledge by applying HTML and CSS">
     <link rel="stylesheet" href="styles/base.css">
-     <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
     <header>
@@ -28,15 +28,37 @@
     <main>
         <h1 id="toptext">Freeman Moyo</h1>
         <section class="card" id="leftcard">
-            <h2>About Me</h2>
+            <h2 class="cardheader">About Me</h2>
+            <p class="aboutme">My name is Freeman Nkosiyabo Mpokiseng Moyo. I am a Sotho born in Bulawayo and raised in Manama, Gwanda. I am a father of two amazing boys. I am a high school teacher. When I was young my dream was to work in academia, as a lecturer or to do research on animal nutrition and or animal genetics, however, though the dream is still there, I am now exploring other life and career pathways.</em></p>
+            <div>
+                <img id="imageme" class="aboutmeimage" src="/images/aboutme.png" alt="Photo of Freeman">
+                <p class="aboutme">I am highly passionate about Linux and my main driver is Fedora. I am into reading, nature and I am someone who loves deep solitude. I do listen to music, with my favorite genre being Kalanga-Rhumba, Maskandi, Mbaqanga and Umculo wePhostoli. I am not a serious soccer fan, however, my favorite football is Highlander FC <em>Amahlolanyama, iTshilamoya.</em></p>
+            </div>
+            
+            <h3 id="gwandahead">Gwanda, Zimbabwe</h3>
+            <hr class="card-divider">
+            <div>
+                <img  id="imagegwanda" class="aboutmeimage" src="images/aboutgwanda.png" alt="Photo of Gwanda vegetation">
+                <p id="gwandatext">Gwanda is a hot dry region in the southern part of the country, next to Botswana and South African borders. There kind warm hearted people, with Sotho being the main language. However, people used to speak Jahunda, hence its usually called <em>esiJahundeni</em>. The main agricultural activities are animal rearing. However, the area is also rich in minerals such as gold</p>
+                
+            </div>
+            
         </section>
         <section class="card" id="rightcard">
-            <h2>Wed Dev Resources</h2>
+            <h2 class="cardheader">Wed Dev Resources</h2>
+            <ul>
+                <li><a href="https://dev.to/">Dev.to Community</a></li>
+                <li><a href="https://www.smashingmagazine.com/">Smashing Magazine</a></li>
+                <li><a href="https://css-tricks.com/" >CSS Tricks</a></li>
+                <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
+                <li><a href="https://www.udemy.com/?srsltid=AYCX9vJYKmhzTNHKmV74Q5gPiL6qBGZnXeNu8MbHEaTBcTyTEj32yIx-">Udemy</a></li>
+                <li><a href="">Image Placeholder</a></li>
+            </ul>
         </section>
     </main>
 
     <footer>
-        <p>&copy; <span id="year"></span> Moyo Freeman Zimbabwe. All rights reserved.</p>
+        <p>&copy; <span id="year"></span> Moyo Freeman - Zimbabwe. All rights reserved.</p>
         <p id="lastModified"></p>
     </footer>
 </body>
