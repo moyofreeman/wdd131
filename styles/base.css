@@ -77,6 +77,15 @@ header {
 }
 
 /* =====================================================================================*BODY*/
+#course-title {
+    display: block;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;    
+    margin: 0.67em 0;
+    color: #b8860b;
+}
+
 main {
     background-color: #F4F0E6;
     display: grid;
