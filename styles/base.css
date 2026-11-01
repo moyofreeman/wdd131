@@ -62,7 +62,7 @@ header {
 
 .navigation a:hover {
     background-color: #553322;
-    color: #173D32;
+    color: #F4F0E6;
     /* Brightens text slightly */
 }
 
@@ -123,8 +123,13 @@ main h3 {
     display: flex;
     flex-direction: column;
     padding: 0;
-    margin: 0;
+    
     margin-top: 0;
+}
+
+.card  p {                          /*ngizenzele ngedwa*/
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .cardheader {
