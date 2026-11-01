@@ -1,15 +1,12 @@
-/* Import the font from Google */
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'); */
-
-/* Apply the font to your website */
 body {
     display: grid;
     min-height: 100vh;
     grid-template-rows: auto 1fr auto;
     grid-template-columns: 3fr 1fr;
     font-family: "IBM Plex Sans", sans-serif;
-    font-size: 1.125rem;   /* 18px */
-    line-height: 1.6;      /
+    font-size: 1.125rem;
+    /* 18px */
+    line-height: 1.6;/
 }
 
 h1,
@@ -54,25 +51,31 @@ header {
 
 .navigation a {
     color: #F4F0E6;
-    text-decoration: none;  /* Removes the default underline */
-    display: block;         /* Makes the link fill the list item area */
-    padding: 1rem;          /* Gives the navigation bar its height and spacing */
+    text-decoration: none;
+    /* Removes the default underline */
+    display: block;
+    /* Makes the link fill the list item area */
+    padding: 1rem;
+    /* Gives the navigation bar its height and spacing */
 
 }
 
 .navigation a:hover {
-    background-color: #553322; 
-    color: #173D32;            /* Brightens text slightly */
+    background-color: #553322;
+    color: #173D32;
+    /* Brightens text slightly */
 }
 
 .navigation ul {
     list-style: none;
-    display: flex;          /* This turns on flexbox to put items side-by-side */
+    display: flex;
+    /* This turns on flexbox to put items side-by-side */
     flex-wrap: wrap;
 }
 
 .navigation li {
-    flex: 1 1 auto;         /* For items to grow and shrink side-by-side */
+    flex: 1 1 auto;
+    /* For items to grow and shrink side-by-side */
     text-align: center;
 }
 
@@ -81,9 +84,10 @@ header {
     display: block;
     text-align: center;
     font-size: 2em;
-    font-weight: bold;    
+    font-weight: bold;
     margin: 0.67em 0;
     color: #b8860b;
+    /* color: #F4F0E6; */
 }
 
 main {
@@ -93,7 +97,7 @@ main {
     grid-template-columns: 2fr 1fr;
     gap: 1.5rem;
     padding: 2rem;
-    /* grid-template-rows: 1 auto; <------------i removed this, it messes my page--------> */ 
+    /* grid-template-rows: 1 auto; <------------i removed this, it messes my page--------> */
 }
 
 main h1,
@@ -111,11 +115,11 @@ main h3 {
 
 .card {
     min-height: 250px;
-    border: 2px solid #b8860b;          
+    border: 2px solid #b8860b;
     padding: 0;
     box-sizing: border-box;
-    border-radius: 8px;            
-    overflow: hidden;               
+    border-radius: 8px;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     padding: 0;
@@ -126,15 +130,17 @@ main h3 {
 .cardheader {
     text-align: center;
     background-color: #173D32;
-    color: #B08D57;
-    margin: 0;                      
-    padding: 1rem;                  
+    /* color: #B08D57; */
+    margin: 0;
+    padding: 1rem;
+    color: #b8860b;
+    /* color: #F4F0E6; */ls
 }
 
 .aboutmeimage {
     width: 200px;
     height: 200px;
-    border-radius: 1%; 
+    border-radius: 1%;
     object-fit: cover;
     margin: 1rem;
 }
@@ -150,11 +156,12 @@ main h3 {
 .card-divider {
     border: none;
     height: 2px;
-    background-color: #b8860b; 
-    width: 85%;                
-    max-width: 400px;          
+    background-color: #b8860b;
+    width: 85%;
+    max-width: 400px;
     margin: 1rem auto;
 }
+
 /* =====================================================================================*LEFT CARD*/
 #leftcard {
     grid-column: 1/2;
