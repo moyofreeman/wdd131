@@ -1,0 +1,15 @@
+@media screen and (min-width: 500px) {
+    header {
+        background-color: black;
+        color: white;
+    }   
+    
+    main {
+        display: grid;
+        grid-column-template: 1fr 1fr;
+    }
+}
+
+
+/* Within that media query, change the header to a black background with white text.
+Change the main element to display two columns of equal size.  */

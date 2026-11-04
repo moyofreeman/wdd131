@@ -1,0 +1,50 @@
+/* Style the document as shown in the example screenshots below.
+
+    media-query.css
+        Do not include a media query.
+        Apply the Roboto font in the body rule.
+        The header, main, and footer
+            each have a maximum width of 640 pixels
+            are centered on the page using margin: 1rem auto
+            include a faint border
+            use appropriate padding
+            have a blueish background color of your choice
+
+        Remember that you can combine these three selectors into one rule or create a class that contains these common CSS declarations.
+        Declare the main element as a CSS grid with one column and a gap of 1rem.
+
+        If you had a question to pose to the class in Microsoft Teams Week 02 Forum channel, use specific and descriptive language. For example, "I have a question about media-query assignment part 5.1.4. I do not know how to set the main element grid to one column with a 1rem gap."
+        Declare the section elements to also have padding and a lighter or white background.
+    Check Your Understanding */
+body {
+    font-family: 'Roboto', sans-serif;
+    /* padding: 1rem; */
+}
+header, main, footer {
+    max-width: 640px;
+    /* align-items: center; */
+    margin: 1rem auto;
+    padding: 1rem;
+    border: solid 0.5px rgb(163, 163, 245);
+    border-radius: 1px;
+    background-color: #76a8b7;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* grid-template-rows: 1fr; */
+    /* gap: 1rem; */
+    grid-gap: 1rem;
+    border-style: solid 4px;
+    border-color: aquamarine;
+    border-radius: 4px;
+}
+
+section {
+    /* display: grid; */
+    /* grid-template-rows: auto; */
+    background-color: aliceblue;
+    padding:1rem;
+        
+ }
