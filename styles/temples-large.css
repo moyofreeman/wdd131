@@ -1,0 +1,29 @@
+=====================================================================================*Larger Views */
+@media (min-width: 740px) {
+    #menu-button {
+        display: none;
+        /* Hide hamburger completely on desktop/tablet */
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .navbar {
+        background-color: transparent;
+        grid-column: auto;
+    }
+
+    .nav-links {
+        display: flex !important;
+        /* Force menu to stay visible on large screens */
+        justify-content: flex-end;
+        flex-direction: row;
+    }
+
+    .nav-links a {
+        flex: 1 1 100%;
+    }
+}
