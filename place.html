@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maun - Botswana</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <meta name="description" content="Maun, Botswana: gateway to the Okavango Delta. Key facts about the village, including area, population, languages, currency and current weather.">
+</head>
+<body>
+    <header>
+        <h1>Maun Village</h1>
+    </header>
+    <main>
+        <!-- <div  id="heroimage">
+            <picture>
+            <source srcset="images/maun-small.webp" media="(max-width: 600px)">
+            <img src="images/maun-large.webp" alt="Image of Maun, Okavango Delta at evening">
+        </picture>
+        </div> -->
+
+    <div id="heroimage">
+  <picture>
+    <source media="(max-width: 600px)"
+            srcset="images/maun-small-400.webp 400w,
+                    images/maun-small.webp 801w"
+            sizes="100vw"
+            width="801" height="1001">
+    <img src="images/maun-large-1200.webp"
+         srcset="images/maun-large-800.webp 800w,
+                 images/maun-large-1200.webp 1200w,
+                 images/maun-large-1600.webp 1600w"
+         sizes="100vw"
+         width="1200" height="595"
+         fetchpriority="high"
+         alt="Image of Maun, Okavango Delta at evening">
+  </picture>
+</div>
+
+
+
+
+        
+        <div id="data" class="information">
+    <h2>Data</h2>
+    <ul>
+        <li><strong>Area:</strong> 400 km²</li>
+        <li><strong>Population:</strong> 85,293</li>
+        <li><strong>Languages:</strong> Setswana</li>
+        <li><strong>Currency:</strong> Pula (BWP)</li>
+        <li><strong>Time Zone:</strong> (CAT / UTC+2)</li>
+        <li><strong>Calling code:</strong> +267 (City code: 68)</li>
+    </ul>
+</div>
+        <div id="weather" class="information">
+            <h2>Weather</h2>
+            <picture>
+                <source srcset="images/weather-small.svg" media="(max-width: 600px)">
+                <img src="images/weather.svg" alt="Partly cloudy">
+            </picture>
+            
+    <ul>
+        <li><strong></strong>Temperature:</strong> <span id="temp">22</span> &deg;C</li>
+        <li><strong></strong>Conditions:</strong> <span id="condition">Partly Cloudy</span></li>
+        <li><strong></strong>Wind:</strong> <span id="wind">12</span> km/h</li>
+        <li><strong></strong>Wind Chill:</strong> <span id="windchill">N/A</span></li>
+    </ul>
+</div>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> Moyo Freeman - Zimbabwe. All rights reserved.</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
