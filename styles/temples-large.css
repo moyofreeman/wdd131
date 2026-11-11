@@ -1,28 +1,37 @@
-@media (min-width: 600px) {
-    #menu-button {
-        display: none;
-        /* Hide hamburger completely on desktop/tablet */
-    }
-
-    header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .navbar {
-        background-color: transparent;
-        grid-column: auto;
-        padding-right: 2rem;
-    }
+/* 
+    
 
     .nav-links {
         display: flex;
         justify-content: flex-end;
         flex-direction: row;
         padding-right: 2rem;
+    } */
+
+   
+   @media (min-width: 768px) {
+    #menu-button {
+        display: none; 
     }
 
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 2rem;
+    }
+.navbar {
+        background-color: transparent;
+        grid-column: auto;
+        padding-right: 2rem;
+    }
+    
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+   
     .nav-links a {
         flex: 1 1 100%;
     }
@@ -32,7 +41,7 @@
     max-width: 800px;
 }
 
-    #temples {
+    /* #temples {
     
     margin: 0 auto;
     display: grid;
@@ -48,7 +57,25 @@ main figure {
     row-gap: 1rem;
     text-align: center;
     height: auto;
-}
+} */
+
+#temples {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+        gap: 1.5rem;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    main figure {
+        text-align: center;
+        margin: 0;
+    }
+
+    main figure img {
+        width: 100%;
+        height: auto;
+    }
 
 }
 
