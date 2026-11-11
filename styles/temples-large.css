@@ -1,4 +1,4 @@
-@media (min-width: 740px) {
+@media (min-width: 600px) {
     #menu-button {
         display: none;
         /* Hide hamburger completely on desktop/tablet */
@@ -13,16 +13,43 @@
     .navbar {
         background-color: transparent;
         grid-column: auto;
+        padding-right: 2rem;
     }
 
     .nav-links {
-        display: flex !important;
-        /* Force menu to stay visible on large screens */
+        display: flex;
         justify-content: flex-end;
         flex-direction: row;
+        padding-right: 2rem;
     }
 
     .nav-links a {
         flex: 1 1 100%;
     }
+
+
+    main {
+    max-width: 800px;
 }
+
+    #temples {
+    
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    background-color: white;
+}
+
+main figure {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    row-gap: 1rem;
+    text-align: center;
+    height: auto;
+}
+
+}
+
+

@@ -6,14 +6,14 @@
 
 body {
     font-family: "Montserrat", sans-serif;
-    background-color: #F4F0E6;
-    color: #173D32;
+    background-color: white;
+    color: black;
 }
 
 /* mobile **************************/
 header {
     background-color: #173D32;
-    color: #ffffff;
+    color: white;
     display: grid;
     grid-template-columns: auto auto;
     align-items: center;
@@ -21,7 +21,7 @@ header {
     grid-gap: 1rem;
     padding: 20px;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    box-shadow: 0 0 30px #333;
+    /* box-shadow: 0 0 30px #333; */
 }
 
 header,
@@ -35,6 +35,7 @@ h3,
 h4,
 nav {
     font-family: "Source Sans 3", sans-serif;
+    text-align: center;
 }
 
 /* Hamburger button styling for mobile view */
@@ -82,23 +83,42 @@ nav {
     background-color: #553322;
 }
 
+
+
 .active {
     color: #b8860b;
 }
 
 main {
-    max-width: 900px;
+    max-width: 800px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr;
-    background-color: #F4F0E6;
+    background-color: white;
+}
+
+main figure {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    row-gap: 1rem;
+    text-align: center;
+    height: auto;
+}
+
+
+main figure img {
+    display: block;
+    width: 100%;
+    max-width: 600px;
 }
 
 /* =====================================================================================*FOOTER*/
 
 footer {
     background-color: #173D32;
-    color: #B08D57;
+    color: white;
     text-align: center;
     padding: 2rem 1rem;
     font-size: 0.95rem;
