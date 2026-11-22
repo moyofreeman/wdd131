@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <title>Temple Album</title>
+    <meta name="description" content="Explore a collection of Latter-day Saint temples from around the world, showcasing their unique architectural beauty and structures across different continents.">
+    <meta name="author" content="Freeman Moyo">
+
+    <script src="scripts/filtered-temples.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <button id="menu-button" aria-label="Open Menu">&#9776;</button>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="temples.html" class="active">Home</a></li>
+                <li><a href="#" id="old">Old</a></li>
+                <li><a href="#" id="new">New</a></li>
+                <li><a href="#" id="large">Large</a></li>
+                <li><a href="#" id="small">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Temples of the World</h2>
+        <div class="templesGrid">
+
+        
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Moyo Freeman - Zimbabwe. All rights reserved.</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
