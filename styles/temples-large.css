@@ -1,18 +1,17 @@
-/* 
-    
+/* ================================
+   DESKTOP VIEW
+================================ */
 
-    .nav-links {
-        display: flex;
-        justify-content: flex-end;
-        flex-direction: row;
-        padding-right: 2rem;
-    } */
+@media (min-width: 768px) {
 
-   
-   @media (min-width: 768px) {
+    /* HAMBURGER BUTTON */
+
     #menu-button {
-        display: none; 
+        display: none;
     }
+
+
+    /* HEADER */
 
     header {
         display: flex;
@@ -20,48 +19,46 @@
         justify-content: space-between;
         padding: 0 2rem;
     }
-.navbar {
+
+
+    /* NAVIGATION */
+
+    .navbar {
         background-color: transparent;
         grid-column: auto;
         padding-right: 2rem;
     }
-    
+
     .nav-links {
         display: flex;
         flex-direction: row;
+        justify-content: flex-end;
         gap: 1.5rem;
     }
-   
+
     .nav-links a {
         flex: 1 1 100%;
+        color: var(--light-text-color);
+    }
+
+    .nav-links a:hover {
+        color: var(--light-text-color);
+        background-color: var(--hover-color);
     }
 
 
+    /* MAIN CONTENT */
+
     main {
-    max-width: 800px;
-}
+        max-width: 800px;
+    }
 
-    /* #temples {
-    
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    background-color: white;
-}
 
-main figure {
-    display: grid;
-    width: 100%;
-    grid-template-columns: 1fr;
-    padding: 1rem;
-    row-gap: 1rem;
-    text-align: center;
-    height: auto;
-} */
+    /* TEMPLES GRID */
 
-#temples {
+    #temples {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         gap: 1.5rem;
         max-width: 1000px;
         margin: 0 auto;
@@ -77,9 +74,6 @@ main figure {
         height: 250px;
         object-fit: cover;
         display: block;
-
     }
 
 }
-
-
