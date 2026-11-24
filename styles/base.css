@@ -6,7 +6,7 @@ body {
     font-family: "IBM Plex Sans", sans-serif;
     font-size: 1.125rem;
     /* 18px */
-    line-height: 1.6;/
+    line-height: 1.6;
 }
 
 h1,
@@ -184,7 +184,7 @@ main h3 {
 }
 
 #reviewform {
-    border: 1px solid beige;;
+    border: 1px solid #F4F0E6;
     background-color: beige;
     border-radius: 2px;
     width: 100%;
