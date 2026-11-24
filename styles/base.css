@@ -91,7 +91,7 @@ header {
 }
 
 main {
-    background-color: #F4F0E6;
+    /*background-color: #F4F0E6;*/
     display: grid;
     grid-template-rows: auto 1fr;
     grid-template-columns: 2fr 1fr;
@@ -183,8 +183,90 @@ main h3 {
     grid-column: 2/3;
 }
 
+#reviewform {
+    border: 1px solid beige;;
+    background-color: beige;
+    border-radius: 2px;
+    width: 100%;
+    max-width: 400px;
+    margin: 2rem;
+    padding: 1rem;
+}
+
+#reviewform label {
+    display: block;
+    font-size: 0.8rem;
+    padding-top: 1rem;
+}
 
 
+#reviewform .stars {
+    display: flex;
+    gap: 10px;
+}
+
+#reviewform .stars label {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 6px;
+
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+@media (max-width: 400px) {
+  #reviewform .stars {
+    display: block;
+
+  }
+
+    #reviewform .stars label {
+    display: flex;
+    flex-direction: row;
+}
+}
+
+#reviewform input[type='text'],
+#reviewform select,
+#reviewform input[type='date'],
+#reviewform textarea {
+    background-color: #eee;
+    display: block;
+    border: 1px solid #a58032;
+    border-radius: 2px;
+    color: grey;
+    max-width: 400px;
+    width: 100%;
+}
+
+ #username {
+        min-height: 1.2rem;
+    }
+
+
+#reviewform radio,
+#reviewform checkbox {
+    border: 2px solid beige;
+    margin-right: 6px;
+}
+
+#reviewform input[type=submit] {
+    border: 1px #a58032 solid;
+    margin-right: 6px;
+    max-width: 400px;
+    width: 96%;
+    margin: 1rem 2% 0 2%;
+    background-color: #a58032;
+    color: white;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+#reviewParagraph {
+    text-align: center;
+    font-size: 0.8rem;
+}
 
 /* =====================================================================================*FOOTER*/
 
