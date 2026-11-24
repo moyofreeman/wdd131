@@ -113,3 +113,7 @@ p {
   background-color: var(--bg-tint);
   color: var(--text-dark);
 }
+
+footer p, header p {
+  color: white;
+}
