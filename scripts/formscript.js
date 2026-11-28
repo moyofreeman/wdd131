@@ -1,5 +1,3 @@
-
-
 const products = [
   {
     id: "fc-1888",
@@ -30,39 +28,11 @@ const products = [
 
 const productSelect = document.querySelector("#productName");
 
-function callback(product) {
-    const option = document.createElement("option");
-
-    option.value = product.id;
-    option.textContent = product.name;
-
-    productSelect.appendChild(option);
+function addProductOption(product) {
+  const option = document.createElement("option");
+  option.value = product.id;
+  option.textContent = product.name;
+  productSelect.appendChild(option);
 }
 
-products.forEach(callback);
-
-
-const submit = document.getElementById("submit");
-const reviews = document.querySelector("#reviews");
-
-let numReviews = Number(localStorage.getItem("visits-ls") || 0);
-
-numReviews++;
-
-localStorage.setItem("visits-ls", numReviews);
-
-reviews.textContent = numReviews;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+products.forEach(addProductOption);
